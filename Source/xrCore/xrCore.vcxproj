@@ -49,7 +49,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PreprocessorDefinitions>XRCORE_EXPORTS;_WINDOWS;_USRDLL;_DEBUG;GITHUB_ACTIONS=$(GITHUB_ACTIONS);GITHUB_RUN_ID=$(GITHUB_RUN_ID);GITHUB_RUN_NUMBER=$(GITHUB_RUN_NUMBER);GITHUB_REPOSITORY=$(GITHUB_REPOSITORY);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
-      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -76,7 +76,7 @@ call .GitInfo.cmd</Command>
       <PreprocessorDefinitions>XRCORE_EXPORTS;_WINDOWS;_USRDLL;NDEBUG;GITHUB_ACTIONS=$(GITHUB_ACTIONS);GITHUB_RUN_ID=$(GITHUB_RUN_ID);GITHUB_RUN_NUMBER=$(GITHUB_RUN_NUMBER);GITHUB_REPOSITORY=$(GITHUB_REPOSITORY);%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>stdafx.h</PrecompiledHeaderFile>
       <AdditionalIncludeDirectories>$(SolutionDir)..\SDK\tbb\Include;$(SolutionDir)..\SDK\Include;$(SolutionDir)xrRender\Public;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions2</EnableEnhancedInstructionSet>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <Optimization>Full</Optimization>
       <StringPooling>true</StringPooling>
